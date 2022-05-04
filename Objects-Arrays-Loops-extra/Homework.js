@@ -42,7 +42,7 @@ console.log("\n-----------Ex.3 Answers-----------\n")
 
 someone.hasDrivingLicense = "true"
 
-console.log("someone")
+console.log(someone)
 
 
 /* EXERCISE 4
@@ -84,18 +84,19 @@ console.log(compareEmail)
 
 console.log("\n-----------Ex.6 Answers-----------\n")
 
-totalShoppingCart = 30 //currency: Euros
+let totalShoppingCart = 30 //currency: Euros
 
-let eligibility
+let shippingCost = 10
 
 if (totalShoppingCart > 50) {
-    eligibility = "Qualifies for free shipping"
+    console.log("Qualifies for free shipping") 
 } else {
-    eligibility = "10"
-    
+    console.log("No free shipping, must pay " + (totalShoppingCart + shippingCost)) 
 }
 
-console.log(eligibility)
+let totalShoppingCost = totalShoppingCart + shippingCost
+
+console.log(totalShoppingCost)
 
 
 /* EXERCISE 7
@@ -108,31 +109,73 @@ console.log("\n-----------Ex.7 Answers-----------\n")
 
 totalShoppingCart = 30 //currency: Euros
 
-eligibility
-
 let discount = 20 // percentage
 
-if (totalShoppingCart > 50) {
-    eligibility = "Qualifies for free shipping"
+shippingCost = 10
+
+let discountedTotalShoppingCart = totalShoppingCart*0.8
+
+
+if (discountedTotalShoppingCart > 50) {
+    console.log("Qualifies for free shipping, the total is "+discountedTotalShoppingCart)
 } else {
-    eligibility = "10"
+    console.log("No free shipping, the total is "+ (discountedTotalShoppingCart +10))
     
 }
 
-console.log(eligibility)
+totalShoppingCost = discountedTotalShoppingCart + shippingCost
+
+console.log(totalShoppingCost)
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
  Then clone it 5 times, and change the licensePlate for each cloned car without affecting the original one.
 */
+
 console.log("\n-----------Ex.8 Answers-----------\n")
+
+let car = {
+    brand: "Audi",
+    model: "A4",
+    licensePlate: "NW 1234"
+}
+
+console.log(car)
+
+let car2 = Object.assign({}, car)
+
+car2.licensePlate = "NW 4559"
+console.log(car2)
+
+let car3 = Object.assign({}, car)
+
+car3.licensePlate = "NW 5986"
+console.log(car3)
+
+let car4 = Object.assign({}, car)
+
+car4.licensePlate = "NW 4586"
+console.log(car4)
+
+let car5 = Object.assign({}, car)
+
+car5.licensePlate = "NW 2335"
+console.log(car5)
+
+let car6 = Object.assign({}, car)
+
+car6.licensePlate = "NW 7264"
+console.log(car6)
 
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
+
 console.log("\n-----------Ex.9 Answers-----------\n")
 
+let carsForRent = [car, car2, car3, car4, car5, car6]
+console.log(carsForRent)
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.

@@ -177,15 +177,23 @@ console.log("\n-----------Ex.9 Answers-----------\n")
 let carsForRent = [car, car2, car3, car4, car5, car6]
 console.log(carsForRent)
 
+
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
+
 console.log("\n-----------Ex.10 Answers-----------\n")
+
+carsForRent.pop(5)
+
+carsForRent.splice(0,1)
+console.log(carsForRent)
 
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
+
 console.log("\n-----------Ex.11 Answers-----------\n")
 
 
@@ -193,13 +201,37 @@ console.log("\n-----------Ex.11 Answers-----------\n")
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
  Create a new variable called totalCars and assign to it the total number of cars present in the carsForSale and carsForRent arrays.
 */
+
 console.log("\n-----------Ex.12 Answers-----------\n")
+
+let carsForSale = ["Audi", "Tesla", "BMW"]
+
+console.log(carsForSale)
+
+totalCars = carsForSale.concat(carsForRent)
+
+console.log(totalCars)
 
 
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
+
 console.log("\n-----------Ex.13 Answers-----------\n")
 
+for (let index = 0; index < carsForSale.length; index += 1){
+    let currentLoop = carsForSale[index]
+    console.log(currentLoop)
+}
 
+console.log("\n-----------OR-----------\n")
+
+
+let index = 0
+
+while (index < carsForSale.length){
+    let currentLoop = carsForSale[index]
+    index += 1
+    console.log(currentLoop)
+}
 console.log("\n-----------!!END OF ANSWERS!!-----------\n")

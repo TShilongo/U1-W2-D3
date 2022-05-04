@@ -11,9 +11,10 @@ ASSIGNMENT RULES
 /* EXERCISE 1
  Create a variable and assign to it an array containing the first 5 positive numbers.
 */
+
 console.log("\n-----------Ex.1 Answers-----------\n")
 
-let arrayOfPositiveNumbers = ("1", "2", "3", "4","5")
+let arrayOfPositiveNumbers = [1, 2, 3, 4, 5]
 
 console.log(arrayOfPositiveNumbers)
 
@@ -21,6 +22,7 @@ console.log(arrayOfPositiveNumbers)
 /* EXERCISE 2
  Create a variable and assign to it an object containing your name, surname, email address and age.
 */
+
 console.log("\n-----------Ex.2 Answers-----------\n")
 
 let someone = {
@@ -30,7 +32,7 @@ let someone = {
     age: "25"
 }
 
-console.log("someone")
+console.log(someone)
 
 
 /* EXERCISE 3
@@ -38,7 +40,7 @@ console.log("someone")
 */
 console.log("\n-----------Ex.3 Answers-----------\n")
 
-someone.hssDrivingLicense = "true"
+someone.hasDrivingLicense = "true"
 
 console.log("someone")
 
@@ -46,16 +48,18 @@ console.log("someone")
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
+
 console.log("\n-----------Ex.4 Answers-----------\n")
 
 delete someone.age
 
-console.log("someone")
+console.log(someone)
 
 
 /* EXERCISE 5
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
 */
+
 console.log("\n-----------Ex.5 Answers-----------\n")
 
 let someoneElse = {
@@ -65,27 +69,57 @@ let someoneElse = {
 
 }
 
-console.log("someoneElse")
+console.log(someoneElse)
 
-if (someone.email === some@one.com) {
-    
-} else {
-    
-}
+let compareEmail = someone.email === someoneElse.email
+
+console.log(compareEmail)
+
+
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
  Currently you have a promotion: if the customer's shopping cart total is more than 50, the user is eligible for free shipping (otherwise it costs 10).
  Write an algorithm that calculates the total cost to charge the user with.
 */
+
 console.log("\n-----------Ex.6 Answers-----------\n")
+
+totalShoppingCart = 30 //currency: Euros
+
+let eligibility
+
+if (totalShoppingCart > 50) {
+    eligibility = "Qualifies for free shipping"
+} else {
+    eligibility = "10"
+    
+}
+
+console.log(eligibility)
 
 
 /* EXERCISE 7
  You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
+
 console.log("\n-----------Ex.7 Answers-----------\n")
 
+
+totalShoppingCart = 30 //currency: Euros
+
+eligibility
+
+let discount = 20 // percentage
+
+if (totalShoppingCart > 50) {
+    eligibility = "Qualifies for free shipping"
+} else {
+    eligibility = "10"
+    
+}
+
+console.log(eligibility)
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.

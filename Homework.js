@@ -76,6 +76,22 @@ let compareEmail = someone.email === someoneElse.email
 console.log(compareEmail)
 
 
+/*             OR as in homework soltion below:
+
+let secondPerson = {
+    name: "Second",
+    surname: "Surname",
+    email: "second@strive.school",
+  };
+  
+  console.log(
+    "The email is equal to the previous one: ",
+    person.email !== secondPerson.email
+  );
+
+  */
+
+
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
  Currently you have a promotion: if the customer's shopping cart total is more than 50, the user is eligible for free shipping (otherwise it costs 10).

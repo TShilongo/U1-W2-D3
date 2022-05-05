@@ -15,7 +15,6 @@ console.log("\n-----------Extra 1 answers-----------\n")
 
 console.log("\n-----------Extra 2 answers-----------\n")
 
-let maxNumericalValue = 500
 
 /* EXTRA 3
  Write a piece of code for getting the minimum numerical value from an array.
